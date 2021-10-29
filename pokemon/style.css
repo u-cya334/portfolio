@@ -7,12 +7,13 @@
     white-space: nowrap;
 }
 
-#start{
-    position: relative;
-    margin-left: 50%;
-    transform-origin: center;
-    transform: translate(-70%,0) scale(150%,150%);
-    white-space: nowrap;
+header{
+    text-align: center;
+}
+
+
+#Astart{
+    width: 100% auto;
 }
 
 main{
