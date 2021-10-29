@@ -23,6 +23,7 @@ $restart.addEventListener("click",function(){
     location.reload();
 })
 
+//エンターが押されたら送信
 window.addEventListener("keydown",function(){
     if(this.event.key==="Enter"){
         console.log('enter');
@@ -240,6 +241,10 @@ const noSearch = function(name){
 const gameOver = function(txt){
     newMessage('answer',txt);
     newMessage('answer',"答えれた回数"+answerSum)
+    $surrender.textContent = "ホームへ";
+    $surrender.addEventListener("click",function(){
+        window.location.href = "../index.html";
+    })
 }
 
 start();
