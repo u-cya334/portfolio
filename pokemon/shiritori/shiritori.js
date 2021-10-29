@@ -43,11 +43,17 @@ const send = function(){
     inputWord = $input.value;
     inputLastWord = inputWord.slice(-1);
     $input.value=''; // 送信したら入力フォームの中身を消す
-    if(inputLastWord==="ン"){
-        gameOver("キミの負け");
+
+    no= noSearch(inputWord);
+    console.log(no)
+    if(no===undefined){
+        console.log('mitukaranai');
+        newMessage("playerAnswer",inputWord)
     }else{
-        search(inputWord);
+        src = "./img/i_0"+no+".png"
+        newMessage("playerAnswer",inputWord,"imgR",src);
     }
+        search(inputWord);
 }
 
 //入力
@@ -58,9 +64,7 @@ $send.addEventListener('click',function(){
 //答え作成
 const answerMaking = function(word,last){
     answerSum++;
-    no= noSearch(inputWord);
-    src = "./img/i_0"+no+".png"
-    newMessage("playerAnswer",inputWord,"imgR",src);
+
     //八回目の回答以降背景の大きさを自動調整に
     if(answerSum===8){
         console.log('八回とっぱ')
@@ -168,13 +172,18 @@ const search=function(word){
             if(word===searchName){
                 usedList.push(searchName);
                 exist = true;
-                answerMaking(word,inputLastWord);
-                break
+                if(answerLastWord==="ン"){
+                    gameOver("キミの負け")
+                    break
+                }else{
+                    answerMaking(word,inputLastWord);
+                    break
+                }
             }
             i++;
         }
         if(exist===false){
-            noExist("そんなポケモンは存在しない");
+            noExist("そんなポケモンは<br>存在しない");
         }
     }else{
         noExist('最後の文字と同じ文字ではじめてね')
