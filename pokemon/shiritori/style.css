@@ -1,8 +1,14 @@
 /* しりとりのCSS */
+
 #title{
     position: relative;
     text-align: center;
     white-space: nowrap;
+    font-family: "メイリオ","Meiryo"; font-weight: bold;
+}
+
+#send,#input,#restart,#surrender{
+    border-radius: 10px;
 }
 
 #player{
@@ -24,6 +30,7 @@
     background-size: cover;
     width: 70%;
     height: 600px;
+    border-radius: 10px;
 }
 
 .answer{
@@ -31,43 +38,73 @@
     float:left;
     border-width: 2px;         /*枠線の太さ*/
     border-color:black;   /*枠線の色*/
-    background:white;  
+    background:white;
     color: black;
-    margin-left: 10%; 
+    margin-left: 5%;
     margin-top: 10px;
     font-size: 20px;
+    border-radius: 10px;
+    z-index: 1;
 }
 
 .answer:before {
     position: absolute;
     content: '';
-    border: 10px solid transparent;
+    border: 4px solid transparent;
     border-right: 12px solid white;  /*三角の線になる部分*/
-    top: 10px;
-    left: -19px;
+    top: 3px;
+    left: -13px;
+    transform: rotate(30deg);
+    z-index: -1;
 }
 
 .playerAnswer{
     position: relative;
     text-align: right;
-    /* float:right; */
-    margin-top: 10%;
     border-width: 2px;         /*枠線の太さ*/
     border-color:black;   /*枠線の色*/
-    background:rgb(49, 255, 49);  
+    background:rgb(49, 255, 49);
     color: black;
-    margin: 0 0 0 auto;
-    margin-right: 10%;
+    margin-right: 5%; 
     font-size: 20px;
+    border-radius: 10px;
+    z-index: 1;
 }
 
 .playerAnswer:after {
     position: absolute;
     content: '';
-    border: 10px solid transparent;
+    border: 4px solid transparent;
     border-left: 15px solid rgb(49, 255, 49);
     top: 10px;
-    right: -25px;
+    right: -16px;
+    transform: rotate(-30deg);
+    z-index: -1;
+}
+
+.playerAnswerNo{
+    position: relative;
+    text-align: right;
+    border-width: 2px;         /*枠線の太さ*/
+    border-color:black;   /*枠線の色*/
+    background:rgb(49, 255, 49);
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    z-index: 1;
+    margin: 0 0 0 auto;
+    margin-right: 5%;  
+}
+
+.playerAnswerNo:after {
+    position: absolute;
+    content: '';
+    border: 4px solid transparent;
+    border-left: 15px solid rgb(49, 255, 49);
+    top: 10px;
+    right: -16px;
+    transform: rotate(-30deg);
+    z-index: -1;
 }
 
 .img{
@@ -82,9 +119,16 @@
     width: 30px;
     height: 30px;
     margin-top: 0%;
+    margin: 0 0 0 auto;
+    margin-right: 0;    
 }
 
 .box{
+    display: flex;
+    flex-wrap: column;
+}
+
+.boxA{
     display: flex;
     flex-wrap: column;
 }

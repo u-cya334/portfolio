@@ -34,6 +34,7 @@ window.addEventListener("keydown",function(){
 //降参ボタンを押したら敗北へ
 $surrender.addEventListener('click',function(){
     if (lose===false) {
+        newMessage("playerAnswerNo","降参")
         gameOver('キミの負け');
         lose = true;
     }
@@ -42,19 +43,23 @@ $surrender.addEventListener('click',function(){
 const send = function(){
     console.log('input:'+$input.value);
     inputWord = $input.value;
-    inputLastWord = inputWord.slice(-1);
-    $input.value=''; // 送信したら入力フォームの中身を消す
-
-    no= noSearch(inputWord);
-    console.log(no)
-    if(no===undefined){
-        console.log('mitukaranai');
-        newMessage("playerAnswer",inputWord)
+    if(inputWord===""){
+        newMessage("answer","文字を入力してね");
     }else{
-        src = "./img/i_0"+no+".png"
-        newMessage("playerAnswer",inputWord,"imgR",src);
+        inputLastWord = inputWord.slice(-1);
+        $input.value=''; // 送信したら入力フォームの中身を消す
+        no= noSearch(inputWord);
+        console.log(no)
+        if(no===undefined){
+            console.log('mitukaranai');
+            newMessage("playerAnswerNo",inputWord)
+        }else{
+            src = "./img/i_0"+no+".png"
+            newMessage("playerAnswer",inputWord,"imgR",src);
+        }
+            search(inputWord);
     }
-        search(inputWord);
+
 }
 
 //入力
@@ -221,7 +226,7 @@ const newMessage = function(clas,txt,imgclass,src){
     if(imgclass==="img"){
         code='<div class="box"><div class="'+clas+'">'+txt+'</div><img class="'+imgclass+'" src="'+src+'" alt=""></div>';
     }else if(imgclass==="imgR"){
-        code = '<div class="box"><div class="'+clas+'"><img class="'+imgclass+'" src="'+src+'" alt="">'+txt+'</div></div>'
+        code = '<div class="boxA"><img class="'+imgclass+'" src="'+src+'" alt=""><div class="'+clas+'">'+txt+'</div></div>'
     }else{
         code = '<div class="box"><div class="'+clas+'">'+txt+'</div></div>';
     }
