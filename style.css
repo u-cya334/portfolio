@@ -1,49 +1,81 @@
-
-#items {
-    font-size: 60px;
-}
-#foo {
-    color: red;
-}
-
-.nav-item{
-    font-size: 20px;
-    text-align: right;
-    margin-right: 20px;
-}
-
-#loading{
-    position: absolute;
-    background:rgb(54, 54, 54);
-    border-radius: 5px;
-    width : 700px;
-    height : 400px;
-    z-index: 999999;
+#title{
+    background-image: url("./img/backGround.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    height: 1100px;
+    /* border-radius: 100% /0% 0% 50% 50%; */
+    /* 確認用の背景色 */
+    background-color: rgb(255, 255, 255);
 }
 
-#loadingTxt{
-    color: white;
-    position: absolute;
-    z-index: 1000000;
-    top: 50%;
-    font-size: 50px;
-    display: block;
+#titleTxt{
+    color: rgb(255, 255, 255);
+    font-family: serif;
+    font-weight: 900;
+    margin-top: 40%;
 }
 
-.items{
-    margin-left: 2%;
-    margin-top: 10em;
-    font-size: 20px;
+body{
+    background-color: rgb(255, 255, 255);
 }
 
-.info{
-    margin-left: 2%;
-    font-size: 16px;
+
+h1{
+    font-size: 70px;
+    font-weight: bold;
+    font-family: serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2{
+    margin-top: 0%;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Yu Gothic';
+    
+}
+
+.sImg{
+    width: 230px;
+    height: 230px;
+    transition: 0.3s;
+}
+
+.sImg:hover{
+    transform: translate(0,-10px) scale(1.2);
+}
+
+.creation{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Yu Gothic';
+}
+
+.creationMaster{
+    display: flex;
+    justify-content: center;
 }
 
 footer{
-    position: absolute;
-    bottom: 0;
-    font-size: 20px;
+    margin-top: 40px;
     text-align: center;
+}
+
+li{
+    text-align: center;
+}
+
+#aboutThis{
+    text-align: center;
+    font-family: 'Yu Gothic';
+    font-size: 25px;
+}
+
+.link{
+    text-decoration: underline solid rgba(0, 78, 204, 0.794);
 }

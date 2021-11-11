@@ -5,7 +5,7 @@ const $input = document.getElementById('input');
 const $answer = document.getElementsByClassName('answer')[0];
 const $content = document.getElementById('content');
 const $surrender = document.getElementById('surrender');
-console.log($answer)
+console.log($answer);
 let inputWord = ""; // 入力された文字
 let inputLastWord = ""; // 入力された言葉の最後の文字
 let answer = ""; // CPUの回答
@@ -17,7 +17,23 @@ let userAnswerList = []; // プレイヤーの回答可能一覧
 let userAnsewerLastWord = ""; // プレイヤーの回答可能な最後の文字
 let answerSum = 0; // 答えた回数
 let lose = false;
-const replaceWord = ["♂","♀","2","２","Z"]
+let modeSm = true;
+const $answerClass = document.getElementsByClassName('answer');
+const replaceWord = ["♂","♀","2","２","Z"];
+const windowWidth = $(window).width();
+const windowSm = 640;
+
+
+// PCとスマホで処理を分ける
+if (windowWidth <= windowSm) {
+    console.log('スマホ');
+
+}else{
+    console.log('PC');
+    console.log($answerClass);
+    modeSm = false;
+}
+
 // はじめからボタンをおした時にリロードする
 $restart.addEventListener("click",function(){
     location.reload();
@@ -231,6 +247,8 @@ const newMessage = function(clas,txt,imgclass,src){
         code = '<div class="box"><div class="'+clas+'">'+txt+'</div></div>';
     }
     $content.insertAdjacentHTML('afterbegin',code);
+    $answerClass[0].style.fontSize = "40px";
+    
 }
 
 const noSearch = function(name){

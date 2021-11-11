@@ -1,29 +1,13 @@
-windowWidth = $(window).width();
-windowHeigh = $(window).height();
-windowSm = 640;
-$title = document.getElementById('items');
-$titlePic = document.getElementById('titlePic');
-$loading = document.getElementById('loading');
-$loadingTxt = document.getElementById('loadingTxt')
-const fontsizeChange = function(){
-    $loading.style.width = windowWidth + 'px';
-    $loading.style.height = windowHeigh + "px";
-    if(windowWidth<=windowSm){
-        console.log($title);
-        console.log($title.style.fontSize);
-        $titlePic.src = "https://source.unsplash.com/random/"+windowWidth+"x"+windowWidth/3
-        $title.style.fontSize = 30+"px";
-        console.log('hi');
-    }else{
-        $titlePic.src = "https://source.unsplash.com/random/"+windowWidth+"x"+windowWidth/5
-        console.log('PC');
-    }
+const $title = document.getElementById("title");
+const $titleTxt = document.getElementById('titleTxt');
+$width = $(window).width();
+console.log($width);   
+
+const resize = ()=>{
+    $titleTxt.style.fontSize = "120px"
+    $title.style.height = 1220/1920*$title.clientWidth+"px";
 }
-window.onload = fontsizeChange();
 
-let $img = $("img");
-
-$img.on("load",function(){
-    $loading.style.display = "none";
-    $loadingTxt.style.display = "none";
-})
+window.onload = resize();
+$title.onload = resize();
+window.addEventListener('resize',resize);

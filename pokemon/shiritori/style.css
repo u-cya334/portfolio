@@ -24,11 +24,11 @@
 
 #content{
     text-align: center;
-    margin-left: 15%;
+    margin-left: 5%;
     margin-top: 30px;
     background-image: url(img/back.jpg);
     background-size: cover;
-    width: 70%;
+    width: 90%;
     height: 600px;
     border-radius: 10px;
 }
