@@ -74,7 +74,8 @@ li{
 }
 
 .link{
-    text-decoration: underline solid rgba(0, 78, 204, 0.794);
+    color: rgb(39, 154, 248);
+    font-weight: bold;
 }
 
 footer{
