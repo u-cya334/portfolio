@@ -53,7 +53,7 @@ h2{
 .creation{
     text-align: center;
     font-size: 25px;
-    font-family: 'Yu Gothic';
+    font-family: 'Yu Gothic',sans-serif;
 }
 
 .creationMaster{
@@ -69,7 +69,7 @@ li{
 
 #aboutThis{
     text-align: center;
-    font-family: 'Yu Gothic';
+    font-family: 'Yu Gothic',sans-serif;
     font-size: 25px;
 }
 
