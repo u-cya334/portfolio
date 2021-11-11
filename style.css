@@ -58,16 +58,13 @@ h2{
 
 .creationMaster{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-}
-
-footer{
-    margin-top: 40px;
-    text-align: center;
 }
 
 li{
     text-align: center;
+
 }
 
 #aboutThis{
@@ -78,4 +75,9 @@ li{
 
 .link{
     text-decoration: underline solid rgba(0, 78, 204, 0.794);
+}
+
+footer{
+    margin-top: 40px;
+    text-align: center;
 }
