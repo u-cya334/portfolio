@@ -15,12 +15,25 @@
     <title>成果物置き場</title>
     <link rel="stylesheet" href="./tailwind/style_dev.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
     <!-- 一番上の画像を表示させるための場所 -->
-    <div id="title">
+    <!-- <div id="title">
         <br>
-        <div id="titleTxt"></div>
+        <div id="headerBox">
+            <a href="#" class="headerTxt">NEWS</a>
+            <a href="#" class="headerTxt">Works</a>
+            <a href="#" class="headerTxt">About</a> 
+        </div>
+
+        <br>
+    </div> -->
+
+    <div class="bg">
+        <div class="glass">
+            <div id="portfolio">Portfolio</div>
+        </div>
     </div>
 
     <h1>NEWS</h1>
@@ -29,7 +42,7 @@
     </ul>
 
     <!-- 作った物一覧 -->
-    <h1>Creation</h1>
+    <h1>Works</h1>
     <h2>作った物一覧</h2>
     <ul class="creationMaster">
         <li>
@@ -79,6 +92,13 @@
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- SVG -->
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"><path id="wave" d=""/></svg>
+ 
+  <!-- ファイルの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="test.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

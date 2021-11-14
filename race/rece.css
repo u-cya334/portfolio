@@ -1,5 +1,15 @@
-#recetitle{
-    font-size: 60px;
+#racetitle{
+    font-size: 30px;
+}
+
+.txtBox{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Yu Gothic',sans-serif;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border: black solid;
+    border-radius: 30px;
 }
 
 .animbox {
@@ -16,6 +26,8 @@
     margin-left: 80%;
     bottom: 20px;
 }
+
+
 
 #mendako0{
     position: relative;

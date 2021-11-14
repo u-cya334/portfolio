@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+/* 文字 */
+#portfolio{
+    font-size: 200px;
+    font-weight: bold;
+    color: rgba(251, 251, 251, 0.411);
+    -webkit-text-stroke: 2px rgba(253, 253, 253, 0.603);
+    filter: blur(1px);
+    font-family: 'Roboto Slab',"Heebo", sans-serif;
+}
+
+
+/* 中に入っていく液体 */
+.glass::before{
+    content: "";
+    position: absolute;
+    /* 液体の色 */
+    background-color: rgba(0, 211, 211, 0.603);;
+    top: 100%;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    display: block;
+    transition: 3.2s;
+    transform:translateY(-100%) ;
+    border-radius: 5px;
+    z-index: -10;
+    animation-name: pourAnimate;
+    animation-duration: 3.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    backdrop-filter: blur(1px);
+    animation-delay: 1.5s;
+}
+
+/* 注がれて満たされていくアニメーション */
+@keyframes pourAnimate{
+    100%{
+        height: 100%;
+    }
+}
+
+/* ガラスの質感 */
+.glass{
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.109);
+    border: 10px solid rgba(255, 255, 255, 0.411);
+    border-bottom-color: rgba(255, 255, 255, 0.192);
+    border-right-color: rgba(255, 255, 255, 0.212);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 20px rgba(255, 152, 79, 0.705);
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    
+}
+
+/* ガラスの奥側にある背景 */
+.bg{
+    /* 背景画像のパスをここに */
+    background-image: url(img/bgtest.jpg);
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

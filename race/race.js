@@ -207,7 +207,7 @@ const rece = function(){
     line.style = "border-bottom:3px solid";
     animbox.appendChild(line);
     //上の文字を変える
-    $title.textContent = 'レース準備完了！！スタートを押そう！！';
+    $title.textContent = 'レース準備完了！！\nスタートを押そう！！';
 }   
 let finish = false
 //レース本編
@@ -220,8 +220,10 @@ class RaceMain{
         finish = false;
         this.Top = 0; //キャラの進み具合の初期化
         this.spd = 0; //進行メーターの初期化
+        console.log()
     }
     run(){
+        
         let array = new Uint8Array(1); //0~255の乱数を作る
         this.spd++;
         if(this.spd>charStatus[this.no].speed){
@@ -255,12 +257,17 @@ class RaceMain{
                 }else{
                     //敗北アニメーション
                     this.characterId.classList.add('loseAnimate')
+                    finish = true;
                 }
                 //インターバルを止める
                 clearInterval(this.id);
                 //ボタンを再表示＆テキスト表示
                 $start.style.display ="block";
-                $start.textContent = "もう一度";
+                $start.textContent = "もう一度";  
+            }
+            if(stat==="BET"){
+                //インターバルを止める
+                clearInterval(this.id);
             }
         }
     }
