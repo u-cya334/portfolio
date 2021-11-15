@@ -1,1 +1,1 @@
-<?php header('Location: /pythonItems/index.html'); ?>
+<?php header('Location: /index.html'); ?>
