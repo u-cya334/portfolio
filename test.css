@@ -11,7 +11,28 @@
     font-family: 'Roboto Slab',"Heebo", sans-serif;
 }
 
-
+/* 中に入っていく液体 */
+.glass::before{
+    content: "";
+    position: absolute;
+    /* 液体の色 */
+    background-color: rgba(0, 211, 211, 0.603);;
+    top: 100%;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    display: block;
+    transition: 3.2s;
+    transform:translateY(-100%) ;
+    border-radius: 5px;
+    z-index: -10;
+    animation-name: pourAnimate;
+    animation-duration: 3.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    backdrop-filter: blur(1px);
+    animation-delay: 1.5s;
+}
 
 /* 注がれて満たされていくアニメーション */
 @keyframes pourAnimate{
