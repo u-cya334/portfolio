@@ -5,7 +5,7 @@
 /* ガラスの奥側にある背景 */
 .bg{
     /* 背景画像のパスをここに */
-    background-image: url(img/bgtest-mini.jpg);
+    background-image: url(img/bgtest-min.jpg);
     background-size: cover;
     height: 600px;
     width: 100%;
@@ -51,7 +51,7 @@
     width: 100%;
     display: block;
     transition: 3.2s;
-    transform:translateY(-100%) ;
+    transform:translateY(-100%);
     border-radius: 5px;
     z-index: -10;
     

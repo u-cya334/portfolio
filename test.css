@@ -1,4 +1,4 @@
-.glass:hover::before{
+.glass::before{
     animation-name: pourAnimate;
     animation-duration: 3.2s;
     animation-fill-mode: forwards;
