@@ -14,7 +14,7 @@
 
 /* 中に入っていく液体 */
 .glass::before{
-    content: "";
+    content: "r";
     position: absolute;
     /* 液体の色 */
     background-color: rgba(0, 211, 211, 0.603);;
