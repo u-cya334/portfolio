@@ -4,6 +4,7 @@
 
 /* ガラスの奥側にある背景 */
 .bg{
+    position: relative;
     /* 背景画像のパスをここに */
     background-image: url(img/bgtest-min.jpg);
     background-size: cover;
@@ -26,6 +27,10 @@
 
 /* ガラスの質感 */
 .glass{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 60%;
     background-color: rgba(255, 255, 255, 0.109);
     border: 10px solid rgba(255, 255, 255, 0.411);
