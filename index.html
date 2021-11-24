@@ -15,6 +15,7 @@
     <title>ぱにきのポートフォリオ</title>
     <link rel="stylesheet" href="./tailwind/style_dev.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
     <!-- トップの画面 -->
@@ -25,17 +26,17 @@
     </div>
 
     <div class="box">
-        <h1>Concept</h1>
+        <h1 class="fadeUpTrigger">Concept</h1>
         <div id="concept">
             楽しいものや便利なものを多くの人に提供するためのwebアプリケーションを製作しています
         </div> 
     </div>
 
     <!-- 作った物一覧 -->
-    <h1>Works</h1>
-    <h2 class="subtitle">作った物一覧</h2>
+    <h1 class="fadeUpTrigger">Works</h1>
+    <h2 class="subtitle fadeUpTrigger">作った物一覧</h2>
     <ul class="creationMaster">
-        <div class="wideBox">
+        <div class="wideBox fadeUpTrigger">
             <li>
                 <a class="creation" href="race\race.html">
                     <div class="imgFrame"> 
@@ -51,7 +52,7 @@
                 HTML/CSS/JavaScript
             </h2>
         </div>
-        <div class="wideBox">
+        <div class="wideBox fadeUpTrigger">
             <li>
                 <a class="creation" href="pokemon\index.html">
                     <div class="imgFrame">
@@ -69,7 +70,7 @@
             </h2>
         </div>
 
-        <div class="wideBox">
+        <div class="wideBox fadeUpTrigger">
             <li>
                 <a class="creation" href="./counter/index.html">
                     <div class="imgFrame">
@@ -86,7 +87,7 @@
             </h2>
         </div>
 
-        <div class="wideBox">
+        <div class="wideBox fadeUpTrigger">
             <li>
                 <a class="creation" href="pythonItems/index.html">
                     <div class="imgFrame">
@@ -105,13 +106,14 @@
     </ul>
 
     <div class="box">
-        <h1>About</h1>
+        <h1 class="fadeUpTrigger">About</h1>
         <div class="aboutBox">
-            <p class="myImg">
+            <p class="myImg fadeUpTrigger">
                 <img src="./race/img/mendako0.png" alt="">
             </p>
             <div class="about">
                 2020年夏ごろからPythonでDiscordBotをゆるゆる作成していましたが、
+                ちゃんとプログラミングの勉強をしようと思い、
                 2021年10月からHTML/CSS、JavaScriptの学習を開始しました。
                 大学の授業やバイトの合間を縫って日々精進しています。
                 将来的に便利で生活を楽しくできるようなサービスを作りたいと考えています。
@@ -121,10 +123,10 @@
     </div>
 
     <div class="box">
-        <h1>
+        <h1 class="fadeUpTrigger">
             Skill
         </h1>
-        <div class="skillList">
+        <div class="skillList fadeUpTrigger">
             <div class="skillItem">
                 <p class="skillImg">
                     <img src="./img/htmlcsslogo.png" alt="">
@@ -168,10 +170,10 @@
 
 
 
-    <h1>
+    <h1 class="fadeUpTrigger">
         Contact
     </h1>
-    <h2 class="subtitle">お問い合わせ</h2>
+    <h2 class="subtitle fadeUpTrigger">お問い合わせ</h2>
     <div id="aboutThis">
         作ってほしいもののリクエスト、バグ報告などのお問い合わせは<br>
         <a class="link" href="https://twitter.com/paniki334?s=21" target="_blank" rel="noopener noreferrer">
@@ -187,23 +189,16 @@
         </small>
     </footer>
 
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
-  
-    <!-- あとからアニメーションを読み込む -->
-    <script>
-        $(function(){
-            const style = '<link rel="stylesheet" href="test.css">';
-            $("head link:last").after(style);
-        });
-    </script>
-
+    <!-- jquery 読み込み -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <!-- ファイルの読み込み(グーグルアナリティクス) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script> -->
     
     <!-- 自分のjsファイル -->
     <script src="test.js"></script>
     <script src="index.js"></script>
+    <script src="Animation.js"></script>
 </body>
 </html>

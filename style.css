@@ -120,7 +120,7 @@ h1{
 .subtitle{
     margin-top: 0%;
     text-align: center;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     font-family: 'Yu Gothic',sans-serif;
 }
 
@@ -245,3 +245,26 @@ footer{
         font-size: 15px;
     }
 } */
+
+.fadeUpTrigger{
+    opacity: 0;
+}
+
+/* アニメーション */
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:0.7s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+
+@keyframes fadeUpAnime{
+    from {
+    opacity: 0;
+    transform: translateY(100px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
