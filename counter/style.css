@@ -1,0 +1,138 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+#title{
+    text-align: center;
+    font-size: 40px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    border-radius: 10px;
+}
+
+#people{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 30%;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#peopleNumber{
+    margin-left: 2px;
+    font-size: 30px;
+}
+
+.subTitle{
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+}
+
+.button{
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 30px;
+    width: 30px;
+}
+
+.unitBox{
+    width: 30%;
+    justify-content: center;
+}
+
+input{
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    width: 70%;
+}
+
+.defaultBox{
+    width: 30%;
+}
+
+#counter{
+    display: flex;
+    margin-top: 3%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.counterBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-left: 3%;
+    width: 30%;
+    height: 30%;
+    justify-content: center;
+}
+
+.numberBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    width: 100%;
+    height: 100%;
+    /* padding: 30%; */
+    /* padding-top: 10%;
+    padding-bottom: 10%; */
+    border: 5px solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.countName{
+    margin-top: 2%;
+    width: 99%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.inboxMinus{
+    position: relative;
+    height: 100%;
+    text-align: left;
+}
+
+.inboxPlus{
+    text-align: right;
+}
+
+.inboxButton{
+    height: 100px;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0;
+    font-size: 40px;
+}
+
+.countNumber{
+    position: absolute;
+    font-size: 30px;
+    width: 15%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.aButton{
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+
+

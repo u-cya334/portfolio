@@ -18,86 +18,180 @@
     <link rel="stylesheet" href="test.css">
 </head>
 <body>
-    <!-- 一番上の画像を表示させるための場所 -->
-    <!-- <div id="title">
-        <br>
-        <div id="headerBox">
-            <a href="#" class="headerTxt">NEWS</a>
-            <a href="#" class="headerTxt">Works</a>
-            <a href="#" class="headerTxt">About</a> 
-        </div>
-
-        <br>
-    </div> -->
-
+    <!-- トップの画面 -->
     <div class="bg">
         <div class="glass">
-            <div id="portfolio">Portfolio</div>
+            <div id="portfolio">PORTFOLIO</div>
         </div>
     </div>
 
-    <h1>NEWS</h1>
-    <ul>
-        <li>トップページを更新しました。2021/11/12</li>
-    </ul>
+    <div class="box">
+        <h1>Concept</h1>
+        <div id="concept">
+            楽しいものや便利なものを多くの人に提供するためのwebアプリケーションを製作しています
+        </div> 
+    </div>
 
     <!-- 作った物一覧 -->
     <h1>Works</h1>
-    <h2>作った物一覧</h2>
+    <h2 class="subtitle">作った物一覧</h2>
     <ul class="creationMaster">
-        <li>
-            <a class="creation" href="race\race.html">
-                <div class="imgFrame"> 
-                    <img class="sImg" src="./race/img/mendako0.png" alt="">
-                </div>
-                メンダコダービー
-            </a>
-        </li>
-        <li>
-            <a class="creation" href="pokemon\index.html">
-                <div class="imgFrame">
-                    <img class="sImg" src="img/monnbo.png" alt="">
-                </div>
-                ポケモンしりとり
-            </a> 
+        <div class="wideBox">
+            <li>
+                <a class="creation" href="race\race.html">
+                    <div class="imgFrame"> 
+                        <img class="sImg" src="./race/img/mendako0.png" alt="メンダコダービー">
+                    </div>
+                    メンダコダービー
+                </a>
             </li>
-        <li>
-            <a class="creation" href="pythonItems/index.html">
-                <div class="imgFrame">
-                    <img class="sImg" src="img/moji.png" alt="">
-                </div>
-                文字起こしソフト
-            </a> 
-        </li>
+            <h2 class="detail">
+                かわいいメンダコ達が1位を目指して競い合うゲーム。<br>
+                どのメンダコが勝つか予想しよう！！
+                <br><br>
+                HTML/CSS/JavaScript
+            </h2>
+        </div>
+        <div class="wideBox">
+            <li>
+                <a class="creation" href="pokemon\index.html">
+                    <div class="imgFrame">
+                        <img class="sImg" src="img/monnbo.png" alt="モンスターボール">
+                    </div>
+                    ポケモンしりとり
+                </a> 
+            </li>
+            <h2 class="detail">
+                ゲーム「ポケットモンスター」に登場するポケモンの名前で
+                しりとりをしよう！<br>
+                キミはCPUに勝つことができるか…？
+                <br><br>
+                HTML/CSS/JavaScript
+            </h2>
+        </div>
+
+        <div class="wideBox">
+            <li>
+                <a class="creation" href="./counter/index.html">
+                    <div class="imgFrame">
+                        <img class="sImg" src="img/counter.png" alt="カウンター">
+                    </div>
+                    便利カウンター
+                </a> 
+            </li>
+            <h2 class="detail">
+                大人数でのボードゲームの得点管理、カードゲームのライフ管理、
+                出店の来客数のカウント、いろんなときに役に立つカウンターです！
+                <br><br>
+                HTML/CSS/JavaScript
+            </h2>
+        </div>
+
+        <div class="wideBox">
+            <li>
+                <a class="creation" href="pythonItems/index.html">
+                    <div class="imgFrame">
+                        <img class="sImg" src="img/moji.png" alt="">
+                    </div>
+                    文字起こしソフト
+                </a> 
+            </li>
+            <h2 class="detail">
+                音声ファイルで何言っているか聞き取れない…<br>
+                そんな人のために音声ファイルを文字起こしをしてくれるソフトの配布です。
+                <br><br>
+                Python
+            </h2>
+        </div>
     </ul>
 
+    <div class="box">
+        <h1>About</h1>
+        <div class="aboutBox">
+            <p class="myImg">
+                <img src="./race/img/mendako0.png" alt="">
+            </p>
+            <div class="about">
+                2020年夏ごろからPythonでDiscordBotをゆるゆる作成していましたが、
+                2021年10月からHTML/CSS、JavaScriptの学習を開始しました。
+                大学の授業やバイトの合間を縫って日々精進しています。
+                将来的に便利で生活を楽しくできるようなサービスを作りたいと考えています。
+                よろしくお願いします！！
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <h1>
+            Skill
+        </h1>
+        <div class="skillList">
+            <div class="skillItem">
+                <p class="skillImg">
+                    <img src="./img/htmlcsslogo.png" alt="">
+                </p>
+                <div class="skillBody">
+                    <div class="skillName">HTML5/CSS3</div>
+                    <div class="skillText">
+                        要素の配置や装飾、アニメーションなど簡単なコーディングであれば問題ありません。レスポンシブデザインは現在学習中です。
+                    </div>
+                </div>
+            </div>
+
+            <div class="skillItem">
+                <div class="skillImg">
+                    <img src="./img/JSlogo.png" alt="">
+                </div>
+                <div class="skillBody">
+                    <div class="skillName">JavaScript</div>
+                    <div class="skillText">
+                        通常のJavaScriptやJqueryを使用して、動きのあるWebサイトを作れます。
+                    </div>
+                </div>
+            </div>
+
+            <div class="skillItem">
+                <div class="skillImg">
+                    <img src="./img/pythonlogo.png" alt="">
+                </div>
+                <div class="skillBody">
+                    <div class="skillName">Python</div>
+                    <div class="skillText">
+                        DiscordBotの製作経験から、基本的なコーディングが出来るほか、APIを使用したアプリケーションを作成できます。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <h1>
-        About this website
+        Contact
     </h1>
-    <h2>このサイトについて</h2>
+    <h2 class="subtitle">お問い合わせ</h2>
     <div id="aboutThis">
-        このサイトは製作者が思うがままに作ったものを適当においていくポートフォリオです。<br>
-        作ってほしいもののリクエスト、バグ報告などのお問い合わせは
+        作ってほしいもののリクエスト、バグ報告などのお問い合わせは<br>
         <a class="link" href="https://twitter.com/paniki334?s=21" target="_blank" rel="noopener noreferrer">
-            こちらのアカウント
+            こちらのTwitterアカウント
         </a>までDMをお願いいたします
     </div>
 
     <footer>
         <small>
-            @2021-10-9 作成開始<br>
-            @2021-10-30 公開
+            &copy;Yuki Kandori
+            <br>
+            @2021-10-9 作成開始|@2021-10-30 公開
         </small>
     </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <!-- SVG -->
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"><path id="wave" d=""/></svg>
- 
-  <!-- ファイルの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+  <!-- ファイルの読み込み(グーグルアナリティクス) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    
+    <!-- 自分のjsファイル -->
     <script src="test.js"></script>
     <script src="index.js"></script>
 </body>

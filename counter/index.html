@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>便利カウンター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root">
+        <a href="../index.html" class="aButton">TOP</a>
+        <a href="./index.html" class="aButton">便利カウンター</a>
+    </div>
+    <h1 id="title">便利カウンター</h1>
+        
+    <!-- カウンターの設定 -->
+    <header>
+        <!-- 人数(個数)を決める -->
+        <div id="people">
+            <div class="subTitle">個数(0~12)</div>
+            <button class="button" id="peopleMinus">-</button>
+            <div class="number" id="peopleNumber">1</div>
+            <button class="button" id="peoplePlus">+</button>
+        </div>
+        <!-- 1単位を決める -->
+        <div class="unitBox">
+            <div class="subTitle">単位</div>
+            <input type="number" id="unit" value="1" min="0">
+        </div>
+
+        <!-- 初期値を決める -->
+        <div class="defaultBox">
+            <div class="subTitle">初期値</div>
+            <input type="number" value="0" id="default">
+            <a href="#" class="button aButton" id="reset">初期化</a>
+        </div>
+    </header>
+
+    <!-- カウンター -->
+    <div id="counter">
+        <div class="counterBox">
+            <input type="text" value="1個目" class="countName">
+            <div class="numberBox">
+                <button class="button inboxMinus no1 inboxButton">-</button>
+                <input type="number" class="countNumber no1" value="0">
+                <button class="button inboxPlus no1 inboxButton">+</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="counter.js"></script>
+</body>
+</html>

@@ -12,6 +12,13 @@
     background-color: rgb(255, 255, 255);
 }
 
+#root{
+    display: flex;
+    flex-wrap: nowrap;
+    color: white;
+    background-color: white;
+}
+
 #headerBox{
     margin-top: 30px;
     margin-right: 30px;
@@ -33,23 +40,37 @@
 
 body{
     background-color: rgb(255, 255, 255);
+    font-family: 'Yu Gothic',sans-serif;
+    font-size: 20px;
 }
 
 
 h1{
-    font-size: 70px;
+    font-size: 3em;
     font-weight: bold;
     font-family: serif;
     text-align: center;
     margin-top: 50px;
 }
 
-h2{
+.box{
+    text-align: center;
+    font-family: 'Yu Gothic',sans-serif;
+}
+
+/* コンセプト説明 */
+#concept{
+    font-size: 1.25em;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* 各々のタイトル */
+.subtitle{
     margin-top: 0%;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 3em;
     font-family: 'Yu Gothic',sans-serif;
-    
 }
 
 .sImg{
@@ -62,27 +83,90 @@ h2{
     transform: translate(0,-10px) scale(1.2);
 }
 
-.creation{
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Yu Gothic',sans-serif;
-}
-
 .creationMaster{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* 作った物の画像やタイトル */
+.creation{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Yu Gothic',sans-serif;
+}
+
+/* 作ったもの１つの全体 */
+.wideBox{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    margin-left: 5%;
+    justify-content: center;
+    text-align: left;
+}
+
+/* 作った物の説明 */
+.detail{
+    font-size: 1.3em;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 700px;
+}
+
 li{
     text-align: center;
+}
 
+.aboutBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.myImg{
+    width: 300px;
+    height: 300px;
+}
+
+.about{
+    width: 900px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.skillList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skillItem{
+    display: flex;
+    text-align: left;
+}
+
+.skillName{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.skillImg{
+    width: 7.5em;
+    margin-left: 5px;
+    padding: 15px;
+}
+
+.skillText{
+    width: 15em;
 }
 
 #aboutThis{
     text-align: center;
     font-family: 'Yu Gothic',sans-serif;
-    font-size: 25px;
+    font-size: 1.2em;
 }
 
 .link{
@@ -93,4 +177,18 @@ li{
 footer{
     margin-top: 40px;
     text-align: center;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    margin-bottom: 0;
 }
+
+/* 
+@media screen and (max-width: 480px) {
+    .wideBox{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    body{
+        font-size: 15px;
+    }
+} */
