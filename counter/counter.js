@@ -42,7 +42,7 @@ $("#peoplePlus").click(()=>{
 // カウンターを追加
 const addBox = ()=>{
     $default = $("#default").val();
-    addCode = '<div class="counterBox"><input type="text" value="'+peopleNumber+'個目" class="countName"><div class="numberBox"><button class="button inboxButton inboxMinus no'+peopleNumber+'">-</button><input type="number" class="countNumber no'+peopleNumber+'" value="'+$default+'"><button class="button inboxButton inboxPlus no'+peopleNumber+'">+</button></div></div>'
+    addCode = '<div class="counterBox"><input type="text" value="'+peopleNumber+'個目" class="countName"><div class="numberBox"><a href="#" class="button inboxMinus no'+peopleNumber+' inboxButton aButton">-</a><input type="number" class="countNumber no'+peopleNumber+'" value="'+$default+'"><a href="#" class="button inboxPlus no'+peopleNumber+' inboxButton aButton">+</a></div></div>'
     $counter.insertAdjacentHTML('beforeend',addCode);
     resize();
 }
