@@ -6,6 +6,7 @@
 .bg{
     /* 背景画像のパスをここに */
     background-image: url(img/bgtest-mini.jpg);
+    background-size: cover;
     height: 600px;
     width: 100%;
     display: flex;
