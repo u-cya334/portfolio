@@ -1,3 +1,9 @@
+a{
+    text-decoration: none;
+    text-decoration-line: none;
+    color: rgb(32, 105, 241);
+}
+
 #racetitle{
     font-size: 30px;
 }

@@ -1,4 +1,9 @@
 /* しりとりのCSS */
+a{
+    text-decoration: none;
+    text-decoration-line: none;
+    color: rgb(32, 105, 241);
+}
 
 #title{
     position: relative;
@@ -125,10 +130,8 @@
 
 .box{
     display: flex;
-    flex-wrap: column;
 }
 
 .boxA{
     display: flex;
-    flex-wrap: column;
 }
