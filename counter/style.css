@@ -104,6 +104,7 @@ input{
     border-radius: 10px;
     padding: 5px;
     text-decoration: none;
+    text-decoration-line: none;
     color: black;
 }
 
