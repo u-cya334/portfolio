@@ -7,7 +7,7 @@ function fadeAnime(){
         Pos = $(this).offset().top+200;
         scrollTop = $(window).scrollTop();
         windowH = $(window).height();
-        if(scrollTop >= Pos - windowH){
+        if(scrollTop + windowH >= Pos){
             $(this).addClass('fadeUp');
         }
     });
