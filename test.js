@@ -1,8 +1,6 @@
 const $portfolio = document.getElementById('portfolio');
 const $glass = document.getElementsByClassName('glass');
 
-
-
 const adjust = function(){
     $windowW = $(window).width();
     $windowH = $(window).height();
@@ -12,6 +10,7 @@ const adjust = function(){
     $portfolio.style.fontSize = glassW*0.16+"px";
     $(".bg").height($windowH);
 }
+
 
 window.onload = adjust();
 window.addEventListener("resize",adjust);

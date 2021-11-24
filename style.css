@@ -1,16 +1,15 @@
-#title{
-    background-image: url("./img/backGround.jpg");
-    background-size:contain;
-    background-repeat: no-repeat;
-    text-align: right;
-    margin-left: 50%;
-    transform: translate(-50%,0);
+/* ガラスの奥側にある背景 */
+.bg{
+    /* 背景画像のパスをここに */
+    background-image: url(img/bgtest.jpg);
+    height: 600px;
     width: 100%;
-    height: 1100px;
-    /* border-radius: 100% /0% 0% 50% 50%; */
-    /* 確認用の背景色 */
-    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
 
 #root{
     display: flex;

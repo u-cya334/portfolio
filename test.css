@@ -14,7 +14,7 @@
 
 /* 中に入っていく液体 */
 .glass::before{
-    content: "r";
+    content: "";
     position: absolute;
     /* 液体の色 */
     background-color: rgba(0, 211, 211, 0.603);;
@@ -58,12 +58,12 @@
 }
 
 /* ガラスの奥側にある背景 */
-.bg{
-    /* 背景画像のパスをここに */
+/* .bg{
+    背景画像のパスをここに
     background-image: url(img/bgtest.jpg);
     height: 600px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
