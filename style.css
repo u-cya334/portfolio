@@ -258,6 +258,14 @@ footer{
     opacity:0;
 }
 
+.d1{
+    animation-delay: 200ms;
+}
+
+.d2{
+    animation-delay: 400ms;
+}
+
 @keyframes fadeUpAnime{
     from {
     opacity: 0;
